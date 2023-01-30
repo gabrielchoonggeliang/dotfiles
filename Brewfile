@@ -35,8 +35,6 @@ brew "openssl@3"
 brew "perl"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
-# Python version management
-brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Tool Command Language
