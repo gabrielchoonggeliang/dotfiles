@@ -6,7 +6,6 @@ if [[ "$INSTALL" == "y" || "$INSTALL" == "N" ]]; then
     if [ "$INSTALL" = "N" ]; then
         echo "No changes made"
     else
-        git clone https://github.com/gabrielchoonggeliang/dotfiles.git ~/.dotfiles
         ln -s ~/.dotfiles/.zshrc ~/.zshrc
         ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
