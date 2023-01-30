@@ -55,3 +55,4 @@ brew "tree"
 brew "wget"
 # Enable Windows-like alt-tab
 cask "alt-tab"
+cask "visual-studio-code"
