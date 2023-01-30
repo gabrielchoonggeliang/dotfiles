@@ -16,3 +16,13 @@ if [[ "$INSTALL" == "y" || "$INSTALL" == "N" ]]; then
 else
     return 1
 fi
+
+echo -n "Restoring previous system settings...\nProceed [[y]/N]: "
+read RESTORE
+if [[ "$RESTORE" == "y" || "$RESTORE" == "N" ]]; then
+    if [ "$RESTORE" = "N" ]; then
+        echo "No changes made"
+    else
+        zsh ./settings.sh
+    fi
+fi
