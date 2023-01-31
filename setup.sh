@@ -26,3 +26,13 @@ if [[ "$RESTORE" == "y" || "$RESTORE" == "N" ]]; then
         zsh ./settings.sh
     fi
 fi
+
+echo "Installing tensorflow...\nProceed [[y]/N]: "
+read INSTALL_TENSORFLOW
+if [[ "$INSTALL_TENSORFLOW" == "y" || "$INSTALL_TENSORFLOW" == "N" ]]; then
+    if [ "$INSTALL_TENSORFLOW" = "N" ]; then
+        echo "No changes made"
+    else
+        zsh ./tensorflow.sh
+    fi
+fi
